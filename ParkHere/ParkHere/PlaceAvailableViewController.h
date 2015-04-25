@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlaceAvailableViewController.h
 //  ParkHere
 //
 //  Created by Alexandre JACQUEMOT on 25/04/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController 
-
+@interface PlaceAvailableViewController : UIViewController
 
 @end
-

@@ -21,13 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - EstimoteSDK (3.2.0)
+  - KVNProgress (2.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - EstimoteSDK
+  - KVNProgress
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
   EstimoteSDK: 3bd1c7c1386016171a726ad26b9d699724613c4a
+  KVNProgress: 7001d2d16a2755cee5599e8e485befe056f2197b
 
 COCOAPODS: 0.36.3

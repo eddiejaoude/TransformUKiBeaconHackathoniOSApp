@@ -6,7 +6,8 @@ inhibit_all_warnings!
 target 'ParkHere' do
 
 pod "AFNetworking", "~> 2.0"
-pod 'EstimoteSDK'
+pod "EstimoteSDK"
+pod "KVNProgress"
 
 end
 

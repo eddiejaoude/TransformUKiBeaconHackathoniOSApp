@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A696476CDE43DCA288E48579 /* libPods-ParkHere.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29CB12EE1BFE51D630AFF000 /* libPods-ParkHere.a */; };
+		A84461851AEBC900006E066D /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84461841AEBC900006E066D /* CheckInViewController.m */; };
+		A84461881AEBCA57006E066D /* PlaceAvailableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84461871AEBCA57006E066D /* PlaceAvailableViewController.m */; };
 		A87CC1C11AEBAEE200537319 /* Design in Resources */ = {isa = PBXBuildFile; fileRef = A87CC1C01AEBAEE200537319 /* Design */; };
 		A8ECA9661AEB92E60074D4AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECA9651AEB92E60074D4AB /* main.m */; };
 		A8ECA9691AEB92E60074D4AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECA9681AEB92E60074D4AB /* AppDelegate.m */; };
-		A8ECA96C1AEB92E60074D4AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECA96B1AEB92E60074D4AB /* ViewController.m */; };
 		A8ECA96F1AEB92E60074D4AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8ECA96D1AEB92E60074D4AB /* Main.storyboard */; };
 		A8ECA9711AEB92E60074D4AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8ECA9701AEB92E60074D4AB /* Images.xcassets */; };
 		A8ECA9741AEB92E60074D4AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8ECA9721AEB92E60074D4AB /* LaunchScreen.xib */; };
@@ -31,14 +32,16 @@
 /* Begin PBXFileReference section */
 		29CB12EE1BFE51D630AFF000 /* libPods-ParkHere.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParkHere.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C20061E52C7E4ADFE5F8E7F /* Pods-ParkHere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkHere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere.debug.xcconfig"; sourceTree = "<group>"; };
+		A84461831AEBC900006E066D /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
+		A84461841AEBC900006E066D /* CheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInViewController.m; sourceTree = "<group>"; };
+		A84461861AEBCA57006E066D /* PlaceAvailableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceAvailableViewController.h; sourceTree = "<group>"; };
+		A84461871AEBCA57006E066D /* PlaceAvailableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAvailableViewController.m; sourceTree = "<group>"; };
 		A87CC1C01AEBAEE200537319 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		A8ECA9601AEB92E60074D4AB /* ParkHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ECA9641AEB92E60074D4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8ECA9651AEB92E60074D4AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8ECA9671AEB92E60074D4AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8ECA9681AEB92E60074D4AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A8ECA96A1AEB92E60074D4AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A8ECA96B1AEB92E60074D4AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A8ECA96E1AEB92E60074D4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8ECA9701AEB92E60074D4AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A8ECA9731AEB92E60074D4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -109,8 +112,10 @@
 			children = (
 				A8ECA9671AEB92E60074D4AB /* AppDelegate.h */,
 				A8ECA9681AEB92E60074D4AB /* AppDelegate.m */,
-				A8ECA96A1AEB92E60074D4AB /* ViewController.h */,
-				A8ECA96B1AEB92E60074D4AB /* ViewController.m */,
+				A84461831AEBC900006E066D /* CheckInViewController.h */,
+				A84461841AEBC900006E066D /* CheckInViewController.m */,
+				A84461861AEBCA57006E066D /* PlaceAvailableViewController.h */,
+				A84461871AEBCA57006E066D /* PlaceAvailableViewController.m */,
 				A8ECA96D1AEB92E60074D4AB /* Main.storyboard */,
 				A8ECA9701AEB92E60074D4AB /* Images.xcassets */,
 				A87CC1C01AEBAEE200537319 /* Design */,
@@ -197,6 +202,11 @@
 				TargetAttributes = {
 					A8ECA95F1AEB92E60074D4AB = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A8ECA9781AEB92E60074D4AB = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -282,8 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8ECA96C1AEB92E60074D4AB /* ViewController.m in Sources */,
 				A8ECA9691AEB92E60074D4AB /* AppDelegate.m in Sources */,
+				A84461851AEBC900006E066D /* CheckInViewController.m in Sources */,
+				A84461881AEBCA57006E066D /* PlaceAvailableViewController.m in Sources */,
 				A8ECA9661AEB92E60074D4AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
