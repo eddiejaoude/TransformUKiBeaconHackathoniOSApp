@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImage* logoImage = [UIImage imageNamed:@"park_here"];
+    UIImageView *logoView = [[UIImageView alloc] initWithImage:logoImage];
+    logoView.frame = CGRectMake(0, 0, logoImage.scale*44.0, 44.0);
+    logoView.contentMode = UIViewContentModeScaleAspectFit;
+    self.navigationItem.titleView = logoView;
 }
 
 - (void)didReceiveMemoryWarning {

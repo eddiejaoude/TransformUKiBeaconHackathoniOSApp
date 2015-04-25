@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A696476CDE43DCA288E48579 /* libPods-ParkHere.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29CB12EE1BFE51D630AFF000 /* libPods-ParkHere.a */; };
+		A87CC1C11AEBAEE200537319 /* Design in Resources */ = {isa = PBXBuildFile; fileRef = A87CC1C01AEBAEE200537319 /* Design */; };
 		A8ECA9661AEB92E60074D4AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECA9651AEB92E60074D4AB /* main.m */; };
 		A8ECA9691AEB92E60074D4AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECA9681AEB92E60074D4AB /* AppDelegate.m */; };
 		A8ECA96C1AEB92E60074D4AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ECA96B1AEB92E60074D4AB /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29CB12EE1BFE51D630AFF000 /* libPods-ParkHere.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParkHere.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C20061E52C7E4ADFE5F8E7F /* Pods-ParkHere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkHere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere.debug.xcconfig"; sourceTree = "<group>"; };
+		A87CC1C01AEBAEE200537319 /* Design */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Design; sourceTree = "<group>"; };
 		A8ECA9601AEB92E60074D4AB /* ParkHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ECA9641AEB92E60074D4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8ECA9651AEB92E60074D4AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		A8ECA9791AEB92E60074D4AB /* ParkHereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkHereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ECA97E1AEB92E60074D4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8ECA97F1AEB92E60074D4AB /* ParkHereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkHereTests.m; sourceTree = "<group>"; };
+		BEBCEB257C7546EF1AA96718 /* Pods-ParkHere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkHere.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A696476CDE43DCA288E48579 /* libPods-ParkHere.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74C5D8F3B0B57ED7B457DC09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29CB12EE1BFE51D630AFF000 /* libPods-ParkHere.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88658AFF5E2781F766F77E97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C20061E52C7E4ADFE5F8E7F /* Pods-ParkHere.debug.xcconfig */,
+				BEBCEB257C7546EF1AA96718 /* Pods-ParkHere.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A8ECA9571AEB92E60074D4AB = {
 			isa = PBXGroup;
 			children = (
 				A8ECA9621AEB92E60074D4AB /* ParkHere */,
 				A8ECA97C1AEB92E60074D4AB /* ParkHereTests */,
 				A8ECA9611AEB92E60074D4AB /* Products */,
+				88658AFF5E2781F766F77E97 /* Pods */,
+				74C5D8F3B0B57ED7B457DC09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +113,7 @@
 				A8ECA96B1AEB92E60074D4AB /* ViewController.m */,
 				A8ECA96D1AEB92E60074D4AB /* Main.storyboard */,
 				A8ECA9701AEB92E60074D4AB /* Images.xcassets */,
+				A87CC1C01AEBAEE200537319 /* Design */,
 				A8ECA9721AEB92E60074D4AB /* LaunchScreen.xib */,
 				A8ECA9631AEB92E60074D4AB /* Supporting Files */,
 			);
@@ -126,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8ECA9831AEB92E60074D4AB /* Build configuration list for PBXNativeTarget "ParkHere" */;
 			buildPhases = (
+				B278E169DFDEE7E7D42F1224 /* Check Pods Manifest.lock */,
 				A8ECA95C1AEB92E60074D4AB /* Sources */,
 				A8ECA95D1AEB92E60074D4AB /* Frameworks */,
 				A8ECA95E1AEB92E60074D4AB /* Resources */,
+				47CE599BD760CAFA3FFAD96C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87CC1C11AEBAEE200537319 /* Design in Resources */,
 				A8ECA96F1AEB92E60074D4AB /* Main.storyboard in Resources */,
 				A8ECA9741AEB92E60074D4AB /* LaunchScreen.xib in Resources */,
 				A8ECA9711AEB92E60074D4AB /* Images.xcassets in Resources */,
@@ -213,6 +243,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47CE599BD760CAFA3FFAD96C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkHere/Pods-ParkHere-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B278E169DFDEE7E7D42F1224 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8ECA95C1AEB92E60074D4AB /* Sources */ = {
@@ -345,6 +408,7 @@
 		};
 		A8ECA9841AEB92E60074D4AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C20061E52C7E4ADFE5F8E7F /* Pods-ParkHere.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParkHere/Info.plist;
@@ -355,6 +419,7 @@
 		};
 		A8ECA9851AEB92E60074D4AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBCEB257C7546EF1AA96718 /* Pods-ParkHere.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParkHere/Info.plist;
@@ -416,6 +481,7 @@
 				A8ECA9851AEB92E60074D4AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8ECA9861AEB92E60074D4AB /* Build configuration list for PBXNativeTarget "ParkHereTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +490,7 @@
 				A8ECA9881AEB92E60074D4AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

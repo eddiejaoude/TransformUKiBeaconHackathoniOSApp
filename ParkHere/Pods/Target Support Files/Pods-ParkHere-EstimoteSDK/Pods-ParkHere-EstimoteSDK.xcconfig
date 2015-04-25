@@ -1,0 +1,4 @@
+PODS_PARKHERE_ESTIMOTESDK_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/EstimoteSDK/EstimoteSDK"
+PODS_PARKHERE_ESTIMOTESDK_HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/EstimoteSDK"
+PODS_PARKHERE_ESTIMOTESDK_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/EstimoteSDK"
+PODS_PARKHERE_ESTIMOTESDK_OTHER_LDFLAGS = -framework "CoreBluetooth" -framework "CoreLocation" -framework "EstimoteSDK" -framework "Foundation" -framework "MobileCoreServices" -framework "SystemConfiguration" -framework "UIKit"
