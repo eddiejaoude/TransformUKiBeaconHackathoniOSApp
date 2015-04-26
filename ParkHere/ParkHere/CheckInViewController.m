@@ -9,6 +9,7 @@
 #import "CheckInViewController.h"
 #import <EstimoteSDK/EstimoteSDK.h>
 #import <KVNProgress/KVNProgress.h>
+#import "PlaceAvailableViewController.h"
 
 @interface CheckInViewController () <ESTBeaconManagerDelegate, ESTNearableManagerDelegate>
 
@@ -78,7 +79,7 @@
     
     [self startRanging];
     [_nearableManager startRangingForType:ESTNearableTypeAll];
-    [KVNProgress showWithStatus:@"Loading"];
+    [KVNProgress showWithStatus:@"Scanning ..."];
 }
 
 - (IBAction)LocateCarParkInUsingLocation:(id)sender {
@@ -90,8 +91,12 @@
 - (void)beaconManager:(id)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
     if (beacons.count > 0) {
         CLBeacon* closestBeacon = beacons[0];
-        [manager stopRangingBeaconsInRegion:_region];
-        [self loadInformationFromCarParkUsingBeacon:closestBeacon orNearable:nil];
+        
+        if (closestBeacon.proximity == CLProximityImmediate) {
+            [manager stopRangingBeaconsInRegion:_region];
+            [_nearableManager stopRanging];
+            [self presentPlaceAvailableViewControllerUsingBeacon:closestBeacon orNearable:nil orLocation:nil];
+        }
     }
 }
 
@@ -101,20 +106,30 @@
 {
     if (nearables.count > 0) {
         ESTNearable *closestNearable = nearables[0];
-        [manager stopRanging];
-        [self loadInformationFromCarParkUsingBeacon:nil orNearable:closestNearable];
+
+        if (closestNearable.zone == ESTNearableZoneImmediate) {
+            [manager stopRanging];
+            [_beaconManager stopRangingBeaconsInRegion:_region];
+            [self presentPlaceAvailableViewControllerUsingBeacon:nil orNearable:closestNearable orLocation:nil];
+        }
     }
 }
 
-- (void)loadInformationFromCarParkUsingBeacon:(CLBeacon *)beacon orNearable:(ESTNearable *)nearable {
+#pragma mark - Methods
+
+- (void)presentPlaceAvailableViewControllerUsingBeacon:(CLBeacon *)beacon orNearable:(ESTNearable *)nearable orLocation:(CLLocation *)location {
+    [KVNProgress dismiss];
+    
+    PlaceAvailableViewController *placeAvailableViewController = (PlaceAvailableViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PlaceAvailable"];
     if (beacon) {
-        
+        placeAvailableViewController.beaconIdentifier = [NSString stringWithFormat:@"%@-%@", beacon.major, beacon.minor];
+    } else if (nearable) {
+        placeAvailableViewController.beaconIdentifier = nearable.identifier;
     } else {
-        
+
     }
     
-    [KVNProgress dismiss];
-    [self performSegueWithIdentifier:@"PlaceAvailableSegue" sender:self];
+    [self.navigationController pushViewController:placeAvailableViewController animated:YES];
 }
 
 @end

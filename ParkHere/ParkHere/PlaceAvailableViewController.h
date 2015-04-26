@@ -10,4 +10,6 @@
 
 @interface PlaceAvailableViewController : UIViewController
 
+@property (nonatomic, copy) NSString *beaconIdentifier;
+
 @end
